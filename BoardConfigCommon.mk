@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common msm8974
--include device/samsung/msm8974-common/BoardConfigCommon.mk
+include device/samsung/msm8974-common/BoardConfigCommon.mk
 
 COMMON_PATH := device/samsung/klte-common
 
@@ -33,9 +33,6 @@ BOARD_HAVE_SAMSUNG_BLUETOOTH := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
-
-# Extended Filesystem Support
-TARGET_EXFAT_DRIVER := sdfat
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
